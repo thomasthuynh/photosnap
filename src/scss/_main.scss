@@ -9,6 +9,7 @@
 .createAndShareTextContainer {
   color: #fff;
   background-color: #000;
+  position: relative;
 
   button {
     color: #fff;
@@ -28,6 +29,10 @@
     display: flex;
     font-size: 1.2rem;
     margin-top: 0.8rem;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 
@@ -39,6 +44,14 @@
 
 .arrow {
   margin-left: 2rem;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  height: 0.6rem;
+  width: 12.8rem;
+  background: linear-gradient(to top right, #FFC593, #BC7198, #5A77FF);
 }
 
 @media (min-width: 768px) {
@@ -64,6 +77,16 @@
   .createAndShareImgContainer,
   .designedForEveryoneImgContainer {
     order: 1;
+  }
+
+  .gradient {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 50%;
+    max-height: 36rem;
+    width: 0.6rem;
+    background: linear-gradient(to top, #FFC593, #BC7198, #5A77FF);
   }
 }
 

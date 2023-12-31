@@ -32,6 +32,7 @@ const Main = (props: Props) => {
         <div className="createAndShareTextContainer mainTextContainer">
           <div className="wrapper">
             <div className="createAndShareText mainText">
+              <div className="gradient"></div>
               <h1>Create and Share Your Photo Stories.</h1>
               <p>
                 Photosnap is a platform for photographers and visual
