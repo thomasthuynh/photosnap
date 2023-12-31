@@ -1,0 +1,16 @@
+#featured {
+  display: grid;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  #featured {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #featured {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -18,7 +18,7 @@ type Props = {};
 
 const Main = (props: Props) => {
   return (
-    <div id="main">
+    <main id="main">
       {/* CREATE AND SHARE */}
       <div className="createAndShare mainStory">
         <div className="createAndShareImgContainer mainImgContainer">
@@ -112,7 +112,7 @@ const Main = (props: Props) => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

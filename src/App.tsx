@@ -6,7 +6,7 @@ import "./scss/_typography.scss";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
