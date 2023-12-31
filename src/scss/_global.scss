@@ -11,5 +11,16 @@
 }
 
 button {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
   cursor: pointer;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

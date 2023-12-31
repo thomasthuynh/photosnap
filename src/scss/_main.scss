@@ -1,0 +1,119 @@
+.mainStory {
+  display: grid;
+}
+
+.mainTextContainer {
+  padding: 6.4rem 0;
+}
+
+.createAndShareTextContainer {
+  color: #fff;
+  background-color: #000;
+
+  button {
+    color: #fff;
+  }
+}
+
+.mainText {
+  width: 90%;
+  margin: 0 auto;
+
+  p {
+    padding: 2.4rem 0;
+    color: grey;
+  }
+
+  button {
+    display: flex;
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+  }
+}
+
+.createAndShareText {
+  .arrow {
+    filter: invert(100%);
+  }
+}
+
+.arrow {
+  margin-left: 2rem;
+}
+
+@media (min-width: 768px) {
+  .mainStory {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mainTextContainer {
+    grid-column: span 2;
+  }
+
+  .mainTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+  }
+
+  .createAndShareImgContainer,
+  .designedForEveryoneImgContainer {
+    order: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainText {
+    width: 70%;
+
+    button {
+      margin-top: 1.6rem;
+    }
+  }
+
+  .mainTextContainer {
+    h1 {
+      font-size: 4.4rem;
+      line-height: 5.6rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .mainStory {
+    grid-template-columns: 45% 55%;
+  }
+
+  .beautifulStories {
+    grid-template-columns: 55% 45%;
+  }
+
+  .mainTextContainer {
+    grid-column: span 1;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+  }
+
+  .mainText {
+    width: 80%;
+  }
+}

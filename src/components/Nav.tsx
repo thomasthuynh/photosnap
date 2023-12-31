@@ -13,9 +13,9 @@ const Nav = (props: Props) => {
 
   return (
     <nav>
-      <div className="wrapper menuContainer">
+      <div className="menuContainer">
         {/* MENU */}
-        <div className="navMenu">
+        <div className="navMenu wrapper">
           <div>
             <img src={Logo} alt="Logo" />
           </div>

@@ -1,7 +1,12 @@
 nav {
-  padding: 2.4rem 0.8rem;
+  position: relative;
+}
+
+.menuContainer {
   position: relative;
   z-index: 20;
+  padding: 2.4rem 0;
+  background-color: #fff;
 }
 
 .navMenu {
@@ -89,14 +94,21 @@ nav {
   }
 }
 
+.navModal {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .modalContainer {
   position: absolute;
   z-index: 10;
-  top: calc(-100% - 10.4rem);
+  top: calc(-100% - 19.5rem);
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
+  width: 100%;
+  padding-bottom: 3.6rem;
   opacity: 0;
+  background-color: #fff;
   transition: all 500ms ease;
 
   &.active {
@@ -117,4 +129,10 @@ nav {
   .hamburgerBtn {
     display: none;
   }
+}
+
+@media (min-width: 1024px) {
+  .navList {
+    gap: 4.8rem;
+  } 
 }
