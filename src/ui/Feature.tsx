@@ -1,10 +1,10 @@
-import "../scss/_feature.scss"
+import "../scss/_feature.scss";
 
 type Props = {
   icon: string;
   title: string;
   description: string;
-}
+};
 
 const Feature = ({ icon, title, description }: Props) => {
   return (
@@ -18,7 +18,7 @@ const Feature = ({ icon, title, description }: Props) => {
         <p>{description}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Feature
+export default Feature;

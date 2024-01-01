@@ -6,9 +6,7 @@ import Close from "../assets/shared/mobile/close.svg";
 
 import "../scss/_nav.scss";
 
-type Props = {};
-
-const Nav = (props: Props) => {
+const Nav = () => {
   const [modalToggled, setModalToggled] = useState<boolean>(false);
 
   return (
