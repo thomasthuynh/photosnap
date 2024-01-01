@@ -1,6 +1,7 @@
 import Nav from "../components/Nav"
 import Main from "../components/Main"
-import Featured from "../components/Featured"
+import Latest from "../components/Latest"
+import Benefits from "../components/Benefits"
 
 type Props = {}
 
@@ -9,7 +10,8 @@ const Home = (props: Props) => {
     <div>
       <Nav />
       <Main />
-      <Featured />
+      <Latest />
+      <Benefits />
     </div>
   )
 }

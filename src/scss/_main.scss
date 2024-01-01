@@ -22,7 +22,7 @@
 
   p {
     padding: 2.4rem 0;
-    color: grey;
+    color: #5a5a5a;
   }
 
   button {
@@ -39,6 +39,10 @@
 .createAndShareText {
   .arrow {
     filter: invert(100%);
+  }
+
+  p {
+    color: rgb(120, 120, 120);
   }
 }
 

@@ -1,5 +1,5 @@
 import Story from "./Story";
-import "../scss/_featured.scss";
+import "../scss/_latest.scss";
 
 import MountainsLg from "../assets/stories/mobile/mountains.jpg";
 import MountainsSm from "../assets/stories/mobile/mountains.jpg";
@@ -13,7 +13,7 @@ import VoyageSm from "../assets/stories/mobile/18-days-voyage.jpg";
 import ArchitechturalsLg from "../assets/stories/desktop/architecturals.jpg";
 import ArchitechturalsSm from "../assets/stories/mobile/architecturals.jpg";
 
-const Featured = () => {
+const Latest = () => {
   return (
     <section id="featured">
       <Story
@@ -44,4 +44,4 @@ const Featured = () => {
   );
 };
 
-export default Featured;
+export default Latest;
