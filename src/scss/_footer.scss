@@ -15,16 +15,15 @@ footer {
       opacity: 0.8;
     }
   }
-
-  p {
-    color:#5a5a5a;
-    padding-top: 3.6rem;
-  }
 }
 
 .footerContainer {
   display: grid;
   place-items: center;
+}
+
+.footerLogoContainer {
+  padding-bottom: 0.8rem;
 }
 
 .socialIcons {
@@ -34,7 +33,6 @@ footer {
   padding: 3.2rem 0;
 
   a {
-    width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -65,12 +63,79 @@ footer {
 
     &:hover {
       opacity: 0.8;
-    } 
+    }
   }
+}
+
+.footerPrimary {
+  display: grid;
+  place-items: center;
 }
 
 .footerSecondary {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+
+  p {
+    color: #5a5a5a;
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding-bottom: 4.8rem;
+  }
+
+  .footerContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .socialIcons {
+    order: 1;
+    padding-top: 6.4rem;
+    padding-bottom: 0;
+  }
+
+  .footerLinks {
+    flex-direction: row;
+    padding-bottom: 1.6rem;
+  }
+
+  .footerPrimary {
+    place-items: start;
+    width: 100%;
+  }
+
+  .footerSecondary {
+    align-items: end;
+    justify-content: space-between;
+    height: 100%;
+
+    p {
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .footerPrimary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .socialIcons {
+    padding-top: 9.2rem;
+  }
+
+  .footerLinks {
+    flex-direction: column;
+    grid-row: span 2;
+    padding: 0;
+
+    li {
+      text-align: left;
+    }
+  }
 }

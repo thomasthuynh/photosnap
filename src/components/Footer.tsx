@@ -55,7 +55,7 @@ const Footer = (props: Props) => {
           </ul>
         </div>
 
-      {/* BUTTON AND COPYRIGHT */}
+        {/* BUTTON AND COPYRIGHT */}
         <div className="footerSecondary">
           <button>
             Get an Invite

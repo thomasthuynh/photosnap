@@ -134,5 +134,9 @@ nav {
 @media (min-width: 1024px) {
   .navList {
     gap: 4.8rem;
+
+    a {
+      font-size: 1.4rem;
+    }
   } 
 }
