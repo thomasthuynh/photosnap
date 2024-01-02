@@ -7,9 +7,10 @@ type Props = {
   imgSm: string;
   title: string;
   author: string;
+  date?: string
 };
 
-const Story = ({ imgLg, imgSm, title, author }: Props) => {
+const Story = ({ imgLg, imgSm, title, author, date }: Props) => {
   return (
     <div className="story">
       <div className="overlay"></div>
@@ -22,6 +23,7 @@ const Story = ({ imgLg, imgSm, title, author }: Props) => {
 
       <div className="storyTextContainer">
         <div className="storyText">
+          <p className="date">{date}</p>
           <h3>{title}</h3>
           <p>by {author}</p>
           <div className="storyButtonContainer">

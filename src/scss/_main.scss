@@ -33,14 +33,14 @@
     &:hover {
       opacity: 0.8;
     }
+
+    .arrow {
+      filter: invert(100%);
+    }
   }
 }
 
 .createAndShareText {
-  .arrow {
-    filter: invert(100%);
-  }
-
   p {
     color: rgb(120, 120, 120);
   }
