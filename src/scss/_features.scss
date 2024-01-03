@@ -6,15 +6,20 @@
   padding: 6.4rem 0;
   color: #fff;
   background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 
   p {
     color: #b4b4b4;
-    padding: 2.4rem 0;
+    padding-top: 2.4rem;
   }
 }
 
 .featuresText {
+  width: 90%;
+
   .gradient {
     position: absolute;
     top: 0;
@@ -30,19 +35,74 @@
   padding: 6.4rem 0;
 }
 
-// COMMIT FIRST
+@media (min-width: 768px) {
+  .features header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-// @media (min-width: 768px) {
-//   .features header {
-//     display: grid;
-//     grid-template-columns: repeat(3, 1fr);
-//   }
+  .featuresHeroImgContainer {
+    order: 1;
+  }
 
-//   .featuresTextContainer {
-//     grid-column: span 2;
-//   }
+  .featuresTextContainer {
+    grid-column: span 2;
+  }
 
-//   .featuresHeroImgContainer {
-//     order: 1;
-//   }
-// }
+  .featuresText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+
+    h1,
+    p {
+      width: 75%;
+      max-width: 47.5rem;
+    }
+
+    .gradient {
+      left: 0;
+      height: 100%;
+      width: 0.6rem;
+    }
+  }
+
+  .featuresList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .features header {
+    grid-template-columns: 45% 55%;
+  }
+
+  .featuresTextContainer {
+    grid-column: span 1;
+  }
+
+  .featuresList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .featuresText {
+    h1 {
+      font-size: 4.4rem;
+      line-height: 5.6rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
+  }
+}

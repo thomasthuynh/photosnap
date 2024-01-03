@@ -30,23 +30,21 @@ const Main = () => {
         </div>
 
         <div className="createAndShareTextContainer mainTextContainer">
-          {/* <div className="wrapper"> */}
-            <div className="createAndShareText mainText">
-              <div className="gradient"></div>
-              <h1>Create and Share Your Photo Stories.</h1>
-              <p>
-                Photosnap is a platform for photographers and visual
-                storytellers. We make it easy to share photos, tell stories and
-                connect with others.
-              </p>
-              <button>
-                Get an Invite
-                <span className="arrow">
-                  <img src={Arrow} alt="/" />
-                </span>
-              </button>
-            </div>
-          {/* </div> */}
+          <div className="createAndShareText mainText">
+            <div className="gradient"></div>
+            <h1>Create and Share Your Photo Stories.</h1>
+            <p>
+              Photosnap is a platform for photographers and visual storytellers.
+              We make it easy to share photos, tell stories and connect with
+              others.
+            </p>
+            <button className="invBtn">
+              Get an Invite
+              <span className="arrow">
+                <img src={Arrow} alt="/" />
+              </span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -61,22 +59,20 @@ const Main = () => {
         </div>
 
         <div className="beautifulStoriesTextContainer mainTextContainer">
-          {/* <div className="wrapper"> */}
-            <div className="beautifulStoriesText mainText">
-              <h1>Beautiful Stories Every Time</h1>
-              <p>
-                We provide design templates to ensure your stories look
-                terrific. Easily add photos, text, embed maps and media from
-                other networks. Then share your story with everyone.
-              </p>
-              <Link to="/stories" className="btn">
-                View the Stories
-                <span className="arrow">
-                  <img src={Arrow} alt="/" />
-                </span>
-              </Link>
-            </div>
-          {/* </div> */}
+          <div className="beautifulStoriesText mainText">
+            <h1>Beautiful Stories Every Time</h1>
+            <p>
+              We provide design templates to ensure your stories look terrific.
+              Easily add photos, text, embed maps and media from other networks.
+              Then share your story with everyone.
+            </p>
+            <Link to="/stories" className="invBtn">
+              View the Stories
+              <span className="arrow">
+                <img src={Arrow} alt="/" />
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -94,22 +90,20 @@ const Main = () => {
         </div>
 
         <div className="designedForEveryoneTextContainer mainTextContainer">
-          {/* <div className="wrapper"> */}
-            <div className="designedForEveryoneText mainText">
-              <h1>Designed for Everyone</h1>
-              <p>
-                Photosnap can help you create stories that resonate with your
-                audience. Our tool is designed for photographers of all levels,
-                brands, businesses you name it.
-              </p>
-              <Link to="/stories" className="btn">
-                View the Stories
-                <span className="arrow">
-                  <img src={Arrow} alt="/" />
-                </span>
-              </Link>
-            </div>
-          {/* </div> */}
+          <div className="designedForEveryoneText mainText">
+            <h1>Designed for Everyone</h1>
+            <p>
+              Photosnap can help you create stories that resonate with your
+              audience. Our tool is designed for photographers of all levels,
+              brands, businesses you name it.
+            </p>
+            <Link to="/stories" className="invBtn">
+              View the Stories
+              <span className="arrow">
+                <img src={Arrow} alt="/" />
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
     </main>

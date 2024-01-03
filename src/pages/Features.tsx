@@ -1,4 +1,5 @@
 import Feature from "../ui/Feature";
+import BetaInvite from "../components/BetaInvite";
 import "../scss/_features.scss";
 
 import FeaturesHeroLg from "../assets/features/desktop/hero.jpg";
@@ -27,7 +28,7 @@ const Features = (props: Props) => {
         </div>
 
         <div className="featuresTextContainer">
-          <div className="wrapper">
+          {/* <div className="wrapper"> */}
             <div className="featuresText">
               <div className="gradient"></div>
               <h1>Features</h1>
@@ -37,7 +38,7 @@ const Features = (props: Props) => {
                 share their stories.
               </p>
             </div>
-          </div>
+          {/* </div> */}
         </div>
       </header>
 
@@ -73,6 +74,8 @@ const Features = (props: Props) => {
           description="Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories."
         />
       </div>
+
+      <BetaInvite />
     </div>
   );
 };

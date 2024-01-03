@@ -1,0 +1,71 @@
+.betaInvite {
+  position: relative;
+}
+
+.betaImgContainer {
+  display: grid;
+}
+
+.betaTextContainer {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.betaText {
+  color: #fff;
+
+  h1 {
+    margin-bottom: 3.2rem;
+  }
+
+  .invBtn {
+    color: #fff;
+    margin: 0;
+
+    .arrow {
+      filter: invert(100%);
+    }
+  }
+
+  .gradient {
+    position: absolute;
+    top: 0;
+    height: 0.6rem;
+    width: 12.8rem;
+    background: linear-gradient(to top right, #ffc593, #bc7198, #5a77ff);
+  }
+}
+
+@media (min-width: 768px) {
+  .betaText {
+    .gradient {
+      left: 0;
+      height: 100%;
+      width: 0.6rem;
+    }
+  }
+
+  .betaText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      width: 50%;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .betaText {
+    h1 {
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+  }
+}

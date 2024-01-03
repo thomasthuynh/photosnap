@@ -59,7 +59,7 @@ const Footer = (props: Props) => {
 
           {/* BUTTON AND COPYRIGHT */}
           <div className="footerSecondary">
-            <button>
+            <button className="invBtn">
               Get an Invite
               <span className="arrow">
                 <img src={Arrow} alt="/" />

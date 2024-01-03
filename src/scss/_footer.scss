@@ -2,18 +2,11 @@ footer {
   background-color: #000;
   padding: 6.4rem 0;
 
-  button {
+  .invBtn {
     color: #fff;
-    display: flex;
-    font-size: 1.2rem;
 
     .arrow {
       filter: invert(100%);
-      margin-left: 2rem;
-    }
-
-    &:hover {
-      opacity: 0.8;
     }
   }
 }
@@ -72,6 +65,10 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100%;
+
+  .invBtn {
+    margin-top: 0;
+  }
 
   p {
     color: #5a5a5a;

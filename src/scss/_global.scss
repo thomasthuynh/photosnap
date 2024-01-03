@@ -24,7 +24,7 @@ button {
   cursor: pointer;
 }
 
-.btn {
+.invBtn {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.2rem;
@@ -48,4 +48,11 @@ img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+@media (min-width: 1280px) {
+  .invBtn {
+    font-size: 1.4rem;
+    margin-top: 1.6rem;
+  }
 }

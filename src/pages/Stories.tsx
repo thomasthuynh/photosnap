@@ -43,7 +43,7 @@ const Stories = (props: Props) => {
                 especially in eastern Kentucky and West Virginia, and while the
                 ridges are not high, the terrain is extremely rugged.
               </p>
-              <button>
+              <button className="invBtn">
                 Read the Story
                 <span className="arrow">
                   <img src={Arrow} alt="/" />
