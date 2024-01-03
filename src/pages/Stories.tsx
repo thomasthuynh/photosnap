@@ -25,6 +25,7 @@ const Stories = (props: Props) => {
               className="storiesImg"
             />
           </picture>
+          <div className="overlay"></div>
         </div>
 
         <div className="headerTextContainer">

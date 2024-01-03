@@ -30,7 +30,7 @@ const Main = () => {
         </div>
 
         <div className="createAndShareTextContainer mainTextContainer">
-          <div className="wrapper">
+          {/* <div className="wrapper"> */}
             <div className="createAndShareText mainText">
               <div className="gradient"></div>
               <h1>Create and Share Your Photo Stories.</h1>
@@ -46,7 +46,7 @@ const Main = () => {
                 </span>
               </button>
             </div>
-          </div>
+          {/* </div> */}
         </div>
       </div>
 
@@ -61,7 +61,7 @@ const Main = () => {
         </div>
 
         <div className="beautifulStoriesTextContainer mainTextContainer">
-          <div className="wrapper">
+          {/* <div className="wrapper"> */}
             <div className="beautifulStoriesText mainText">
               <h1>Beautiful Stories Every Time</h1>
               <p>
@@ -76,7 +76,7 @@ const Main = () => {
                 </span>
               </Link>
             </div>
-          </div>
+          {/* </div> */}
         </div>
       </div>
 
@@ -94,7 +94,7 @@ const Main = () => {
         </div>
 
         <div className="designedForEveryoneTextContainer mainTextContainer">
-          <div className="wrapper">
+          {/* <div className="wrapper"> */}
             <div className="designedForEveryoneText mainText">
               <h1>Designed for Everyone</h1>
               <p>
@@ -109,7 +109,7 @@ const Main = () => {
                 </span>
               </Link>
             </div>
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </main>
