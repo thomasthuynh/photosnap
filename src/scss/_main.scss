@@ -50,14 +50,14 @@
   .arrow {
     filter: invert(100%);
   }
-}
 
-.gradient {
-  position: absolute;
-  top: 0;
-  height: 0.6rem;
-  width: 12.8rem;
-  background: linear-gradient(to top right, #ffc593, #bc7198, #5a77ff);
+  .gradient {
+    position: absolute;
+    top: 0;
+    height: 0.6rem;
+    width: 12.8rem;
+    background: linear-gradient(to top right, #ffc593, #bc7198, #5a77ff);
+  }
 }
 
 @media (min-width: 768px) {
@@ -95,14 +95,14 @@
     button {
       width: 75%;
     }
-  }
 
-  .gradient {
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0.6rem;
-    background: linear-gradient(to top, #ffc593, #bc7198, #5a77ff);
+    .gradient {
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0.6rem;
+      background: linear-gradient(to top, #ffc593, #bc7198, #5a77ff);
+    }
   }
 }
 

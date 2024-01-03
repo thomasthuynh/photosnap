@@ -1,0 +1,48 @@
+.featuresHeroImgContainer {
+  display: grid;
+}
+
+.featuresTextContainer {
+  padding: 6.4rem 0;
+  color: #fff;
+  background-color: #000;
+  position: relative;
+
+  p {
+    color: #b4b4b4;
+    padding: 2.4rem 0;
+  }
+}
+
+.featuresText {
+  .gradient {
+    position: absolute;
+    top: 0;
+    height: 0.6rem;
+    width: 12.8rem;
+    background: linear-gradient(to top right, #ffc593, #bc7198, #5a77ff);
+  }
+}
+
+.featuresList {
+  display: grid;
+  place-items: center;
+  padding: 6.4rem 0;
+}
+
+// COMMIT FIRST
+
+// @media (min-width: 768px) {
+//   .features header {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//   }
+
+//   .featuresTextContainer {
+//     grid-column: span 2;
+//   }
+
+//   .featuresHeroImgContainer {
+//     order: 1;
+//   }
+// }
