@@ -24,6 +24,26 @@ button {
   cursor: pointer;
 }
 
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  width: auto;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  .arrow {
+    display: flex;
+    margin-left: 2rem;
+  }
+}
+
 img {
   height: 100%;
   width: 100%;

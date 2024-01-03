@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import Logo from "../assets/shared/desktop/logo.svg";
 import Menu from "../assets/shared/mobile/menu.svg";
@@ -15,18 +16,20 @@ const Nav = () => {
         {/* MENU */}
         <div className="navMenu wrapper">
           <div>
-            <img src={Logo} alt="Logo" />
+            <Link to="/">
+              <img src={Logo} alt="Logo" />
+            </Link>
           </div>
 
           <ul className="navList">
             <li>
-              <a href="">Stories</a>
+              <Link to="/stories">Stories</Link>
             </li>
             <li>
-              <a href="">Features</a>
+              <Link to="/">Features</Link>
             </li>
             <li>
-              <a href="">Pricing</a>
+              <Link to="/">Pricing</Link>
             </li>
           </ul>
 
@@ -49,13 +52,13 @@ const Nav = () => {
         <div className="navModal">
           <ul className="modalList">
             <li>
-              <a href="">Stories</a>
+              <Link to="/stories">Stories</Link>
             </li>
             <li>
-              <a href="">Features</a>
+              <Link to="/">Features</Link>
             </li>
             <li>
-              <a href="">Pricing</a>
+              <Link to="/">Pricing</Link>
             </li>
           </ul>
 

@@ -25,11 +25,11 @@ const Story = ({ imgLg, imgSm, title, author, date }: Props) => {
         <div className="storyText">
           <p className="date">{date}</p>
           <h3>{title}</h3>
-          <p>by {author}</p>
+          <p className="author">by {author}</p>
           <div className="storyButtonContainer">
             <button>
               Read Story
-              <span>
+              <span className="arrow">
                 <img src={Arrow} alt="/" />
               </span>
             </button>

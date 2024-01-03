@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "../scss/_main.scss";
 
 import CreateAndShareLg from "../assets/home/desktop/create-and-share.jpg";
@@ -14,9 +16,7 @@ import DesignedFromEveryoneSm from "../assets/home/mobile/designed-for-everyone.
 
 import Arrow from "../assets/shared/desktop/arrow.svg";
 
-type Props = {};
-
-const Main = (props: Props) => {
+const Main = () => {
   return (
     <main id="main">
       {/* CREATE AND SHARE */}
@@ -69,12 +69,12 @@ const Main = (props: Props) => {
                 terrific. Easily add photos, text, embed maps and media from
                 other networks. Then share your story with everyone.
               </p>
-              <button>
+              <Link to="/stories" className="btn">
                 View the Stories
                 <span className="arrow">
                   <img src={Arrow} alt="/" />
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -102,12 +102,12 @@ const Main = (props: Props) => {
                 audience. Our tool is designed for photographers of all levels,
                 brands, businesses you name it.
               </p>
-              <button>
+              <Link to="/stories" className="btn">
                 View the Stories
                 <span className="arrow">
                   <img src={Arrow} alt="/" />
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

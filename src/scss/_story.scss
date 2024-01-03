@@ -24,23 +24,23 @@
     font-size: 1.2rem;
     padding-bottom: 1.6rem;
   }
-}
 
-
-
-.storyButtonContainer {
-  border-top: 0.1rem solid rgba(255, 255, 255, 0.25);
   button {
+    border-top: 0.1rem solid rgb(255, 255, 255, 0.25);
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding-top: 2.4rem;
     padding-bottom: 1.2rem;
     font-size: 1.2rem;
-    filter: invert(100%);
+    color: #fff;
 
     &:hover {
       opacity: 0.8;
+    }
+
+    .arrow {
+      filter: invert(100%);
     }
   }
 }

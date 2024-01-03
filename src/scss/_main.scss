@@ -35,19 +35,19 @@
     }
 
     .arrow {
-      filter: invert(100%);
+      margin-left: 2rem;
     }
   }
 }
 
 .createAndShareText {
   p {
-    color: rgb(120, 120, 120);
+    color: #787878;
   }
-}
 
-.arrow {
-  margin-left: 2rem;
+  .arrow {
+    filter: invert(100%);
+  }
 }
 
 .gradient {
@@ -55,7 +55,7 @@
   top: 0;
   height: 0.6rem;
   width: 12.8rem;
-  background: linear-gradient(to top right, #FFC593, #BC7198, #5A77FF);
+  background: linear-gradient(to top right, #ffc593, #bc7198, #5a77ff);
 }
 
 @media (min-width: 768px) {
@@ -90,7 +90,7 @@
     height: 50%;
     max-height: 36rem;
     width: 0.6rem;
-    background: linear-gradient(to top, #FFC593, #BC7198, #5A77FF);
+    background: linear-gradient(to top, #ffc593, #bc7198, #5a77ff);
   }
 }
 
@@ -116,7 +116,6 @@
   }
 }
 
-
 @media (min-width: 1280px) {
   .mainStory {
     grid-template-columns: 45% 55%;
@@ -138,9 +137,5 @@
       font-size: 1.6rem;
       line-height: 2.4rem;
     }
-  }
-
-  .mainText {
-    width: 80%;
   }
 }

@@ -9,6 +9,7 @@ footer {
 
     .arrow {
       filter: invert(100%);
+      margin-left: 2rem;
     }
 
     &:hover {
@@ -19,7 +20,6 @@ footer {
 
 .footerContainer {
   display: grid;
-  place-items: center;
 }
 
 .footerLogoContainer {
@@ -33,7 +33,6 @@ footer {
   padding: 3.2rem 0;
 
   a {
-    text-align: center;
     display: flex;
     justify-content: center;
 
@@ -41,10 +40,6 @@ footer {
       opacity: 0.8;
     }
   }
-}
-
-.socialIcon {
-  width: auto;
 }
 
 .footerLinks {
@@ -106,13 +101,11 @@ footer {
 
   .footerPrimary {
     place-items: start;
-    width: 100%;
   }
 
   .footerSecondary {
     align-items: end;
     justify-content: space-between;
-    height: 100%;
 
     p {
       padding: 0;
