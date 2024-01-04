@@ -1,0 +1,191 @@
+.pricingHeroImgContainer {
+  display: grid;
+}
+
+.pricingTextContainer {
+  padding: 6.4rem 0;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  p {
+    color: #b4b4b4;
+    padding-top: 2.4rem;
+  }
+}
+
+.pricingText {
+  width: 90%;
+
+  .gradient {
+    position: absolute;
+    top: 0;
+    height: 0.6rem;
+    width: 12.8rem;
+    background: linear-gradient(to top right, #ffc593, #bc7198, #5a77ff);
+  }
+}
+
+#pricing {
+  main {
+    padding: 6.4rem 0;
+  }
+}
+
+.subscriptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscriptionType {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.6rem;
+
+  .selectedSubscription {
+    color: #000;
+  }
+
+  p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #505050;
+  }
+
+  button {
+    margin: 0 2.4rem;
+  }
+}
+
+.plan {
+  background-color: #dfdfdf;
+  padding: 3.2rem;
+  margin: 3.2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  button {
+    color: #fff;
+    background-color: #000;
+    padding: 1.6rem 0;
+    width: 100%;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.planText {
+  text-align: center;
+
+  h2 {
+    padding: 1.6rem 0;
+  }
+
+  p {
+    color: #505050;
+  }
+}
+
+.planPrice {
+  text-align: center;
+  padding-top: 4.8rem;
+  padding-bottom: 2.4rem;
+
+  p {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+  }
+
+  span {
+    display: block;
+    padding: 1.6rem;
+    color: #505050;
+  }
+}
+
+.proPlan {
+  color: #fff;
+  background-color: #000;
+  position: relative;
+
+  .gradient {
+    position: absolute;
+    top: 0;
+    height: 0.6rem;
+    width: 100%;
+    background: linear-gradient(to top right, #ffc593, #bc7198, #5a77ff);
+  }
+
+  .planText {
+    p {
+      color: #b4b4b4;
+    }
+  }
+
+  .planPrice {
+    span {
+      color: #b4b4b4;
+    }
+  }
+
+  button {
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 7.2rem;
+  height: 3.6rem;
+  margin: 0 2.4rem;
+}
+
+.switch {
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #dfdfdf;
+  border-radius: 5rem;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2.4rem;
+  width: 2.4rem;
+  top: 0.6rem;
+  left: 0.6rem;
+  border-radius: 50%;
+  background-color: #000;
+  transition: all 300ms ease;
+}
+
+input:checked + .slider {
+  background-color: #000;
+}
+
+input:checked + .slider:before {
+  transform: translateX(3.6rem);
+  background-color: #fff;
+}

@@ -17,7 +17,7 @@ type Props = {};
 
 const Features = (props: Props) => {
   return (
-    <div className="features">
+    <div id="features">
       <header>
         <div className="featuresHeroImgContainer">
           <picture>
@@ -28,7 +28,6 @@ const Features = (props: Props) => {
         </div>
 
         <div className="featuresTextContainer">
-          {/* <div className="wrapper"> */}
             <div className="featuresText">
               <div className="gradient"></div>
               <h1>Features</h1>
@@ -38,11 +37,10 @@ const Features = (props: Props) => {
                 share their stories.
               </p>
             </div>
-          {/* </div> */}
         </div>
       </header>
 
-      <div className="featuresList wrapper">
+      <main className="featuresList wrapper">
         <Feature
           icon={Responsive}
           title="100% Responsive"
@@ -73,7 +71,7 @@ const Features = (props: Props) => {
           title="Drag & Drop Image"
           description="Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories."
         />
-      </div>
+      </main>
 
       <BetaInvite />
     </div>

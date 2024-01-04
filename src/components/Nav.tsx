@@ -29,7 +29,7 @@ const Nav = () => {
               <Link to="/features">Features</Link>
             </li>
             <li>
-              <Link to="/">Pricing</Link>
+              <Link to="/pricing">Pricing</Link>
             </li>
           </ul>
 
@@ -58,7 +58,7 @@ const Nav = () => {
               <Link to="/features">Features</Link>
             </li>
             <li>
-              <Link to="/">Pricing</Link>
+              <Link to="/pricing">Pricing</Link>
             </li>
           </ul>
 
