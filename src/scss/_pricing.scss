@@ -63,7 +63,7 @@
 
 .plan {
   background-color: #dfdfdf;
-  padding: 3.2rem;
+  padding: 4.8rem 3.2rem;
   margin: 3.2rem 0;
   display: flex;
   flex-direction: column;
@@ -95,18 +95,18 @@
 
 .planPrice {
   text-align: center;
-  padding-top: 4.8rem;
-  padding-bottom: 2.4rem;
+  padding-top: 2.4rem;
+  padding-bottom: 3.6rem;
 
   p {
     font-size: 4rem;
     font-weight: bold;
     letter-spacing: 0.4rem;
+    padding: 1.6rem;
   }
 
   span {
     display: block;
-    padding: 1.6rem;
     color: #505050;
   }
 }
@@ -188,4 +188,138 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(3.6rem);
   background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  #pricing {
+    header {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .pricingHeroImgContainer {
+    order: 1;
+  }
+
+  .pricingTextContainer {
+    grid-column: span 2;
+  }
+
+  .pricingText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+
+    h1,
+    p {
+      width: 75%;
+      max-width: 47.5rem;
+    }
+
+    .gradient {
+      left: 0;
+      height: 100%;
+      width: 0.6rem;
+    }
+  }
+
+  .plan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90rem;
+  }
+
+  .planText {
+    text-align: left;
+
+    p {
+      padding-bottom: 2.4rem;
+    }
+  }
+
+  .planPrice {
+    padding: 0;
+    text-align: right;
+    height: 100%;
+
+    p {
+      padding: 1.6rem 0;
+    }
+  }
+
+  .proPlan {
+    .gradient {
+      left: 0;
+      height: 100%;
+      width: 0.6rem;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  #pricing {
+    header {
+      grid-template-columns: 45% 55%;
+    }
+  }
+
+  .pricingTextContainer {
+    grid-column: span 1;
+  }
+
+  .planOptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+
+  .plan {
+    width: 90%;
+    display: flex;
+  }
+
+  .proPlan {
+    padding: 8.4rem 3.2rem;
+    .gradient {
+      top: 0;
+      height: 0.6rem;
+      width: 100%;
+    }
+  }
+
+  .planText {
+    text-align: center;
+
+    p {
+      padding-bottom: 0;
+    }
+  }
+
+  .planPrice {
+    text-align: center;
+    padding-top: 2.4rem;
+    padding-bottom: 3.6rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pricingText {
+    h1 {
+      font-size: 4.4rem;
+      line-height: 5.6rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
+  }
 }

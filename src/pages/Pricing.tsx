@@ -29,7 +29,7 @@ const Pricing = (props: Props) => {
             <div className="gradient"></div>
             <h1>Pricing</h1>
             <p>
-              Create your stoires, Photosnap is a platofrm for photographers and
+              Create your stories, Photosnap is a platform for photographers and
               visual storytellers. It's the simple way to create and share your
               photos.
             </p>
@@ -45,7 +45,7 @@ const Pricing = (props: Props) => {
                 Monthly
               </p>
               <label className="switch">
-                <input type="checkbox" checked={annualPlan} />
+                <input type="checkbox" checked={annualPlan} readOnly/>
                 <span
                   className="slider"
                   onClick={() => setAnnualPlan(!annualPlan)}
