@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../scss/_main.scss";
+import { motion } from "framer-motion";
 
 import CreateAndShareLg from "../assets/home/desktop/create-and-share.jpg";
 import CreateAndShareMd from "../assets/home/tablet/create-and-share.jpg";
@@ -31,18 +32,30 @@ const Main = () => {
         <div className="createAndShareTextContainer mainTextContainer">
           <div className="createAndShareText mainText">
             <div className="gradient"></div>
-            <h1>Create and Share Your Photo Stories.</h1>
-            <p>
-              Photosnap is a platform for photographers and visual storytellers.
-              We make it easy to share photos, tell stories and connect with
-              others.
-            </p>
-            <button className="invBtn">
-              Get an Invite
-              <span className="arrow">
-                <img src={Arrow} alt="/" />
-              </span>
-            </button>
+            <motion.div
+              className="createAndShareInnerText"
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              variants={{
+                hidden: { opacity: 0, x: -100 },
+                visible: { opacity: 100, x: 0 },
+              }}
+            >
+              <h1>Create and Share Your Photo Stories.</h1>
+              <p>
+                Photosnap is a platform for photographers and visual
+                storytellers. We make it easy to share photos, tell stories and
+                connect with others.
+              </p>
+              <button className="invBtn">
+                Get an Invite
+                <span className="arrow">
+                  <img src={Arrow} alt="/" />
+                </span>
+              </button>
+            </motion.div>
           </div>
         </div>
       </div>

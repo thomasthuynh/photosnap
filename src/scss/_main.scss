@@ -83,20 +83,19 @@
     align-items: center;
     max-width: none;
 
-    h1,
-    p,
-    .invBtn {
-      width: 75%;
-      max-width: 55rem;
-    }
-
     .gradient {
       left: 0;
       height: 100%;
       width: 0.6rem;
     }
   }
+  
+  .createAndShareInnerText {
+    width: 75%;
+    max-width: 55rem;
+  }
 }
+
 
 @media (min-width: 1280px) {
   .mainStory {
