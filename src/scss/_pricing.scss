@@ -1,3 +1,10 @@
+#pricing {
+  padding-top: 6.4rem;
+  main {
+    padding: 6.4rem 0;
+  }
+}
+
 .pricingHeroImgContainer {
   display: grid;
 }
@@ -29,12 +36,6 @@
   }
 }
 
-#pricing {
-  main {
-    padding: 6.4rem 0;
-  }
-}
-
 .subscriptions {
   display: flex;
   flex-direction: column;
@@ -53,7 +54,7 @@
   p {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #505050;
+    color: #5a5a5a;
   }
 
   button {
@@ -89,7 +90,7 @@
   }
 
   p {
-    color: #505050;
+    color: #5a5a5a;
   }
 }
 
@@ -107,7 +108,7 @@
 
   span {
     display: block;
-    color: #505050;
+    color: #5a5a5a;
   }
 }
 

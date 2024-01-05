@@ -9,11 +9,9 @@ import FullMoonSm from "../assets/stories/mobile/moon-of-appalacia.jpg";
 
 import Arrow from "../assets/shared/desktop/arrow.svg";
 
-type Props = {};
-
-const Stories = (props: Props) => {
+const Stories = () => {
   return (
-    <div>
+    <div id="stories">
       <header>
         <div className="storiesImgContainer">
           <picture>
@@ -25,7 +23,7 @@ const Stories = (props: Props) => {
               className="storiesImg"
             />
           </picture>
-          <div className="overlay"></div>
+          <div className="storiesHeaderOverlay"></div>
         </div>
 
         <div className="headerTextContainer">

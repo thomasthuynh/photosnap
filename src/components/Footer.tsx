@@ -1,18 +1,16 @@
 import { Link } from "react-router-dom";
-
 import "../scss/_footer.scss";
 
 import FooterLogo from "../assets/shared/desktop/footerLogo.svg";
-import Arrow from "../assets/shared/desktop/arrow.svg";
 import Facebook from "../assets/shared/desktop/facebook.svg";
 import Youtube from "../assets/shared/desktop/youtube.svg";
 import Twitter from "../assets/shared/desktop/twitter.svg";
 import Pintrest from "../assets/shared/desktop/pinterest.svg";
 import Instagram from "../assets/shared/desktop/instagram.svg";
 
-type Props = {};
+import Arrow from "../assets/shared/desktop/arrow.svg";
 
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <footer>
       <div className="wrapper">

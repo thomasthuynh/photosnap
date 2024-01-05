@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import "../scss/_main.scss";
 
 import CreateAndShareLg from "../assets/home/desktop/create-and-share.jpg";

@@ -1,14 +1,20 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import "../scss/_nav.scss";
 
 import Logo from "../assets/shared/desktop/logo.svg";
 import Menu from "../assets/shared/mobile/menu.svg";
 import Close from "../assets/shared/mobile/close.svg";
 
-import "../scss/_nav.scss";
+type Props = {
+  modalToggled: boolean;
+  setModalToggled: (value: boolean) => void;
+}
 
-const Nav = () => {
-  const [modalToggled, setModalToggled] = useState<boolean>(false);
+const Nav = ({ modalToggled, setModalToggled }: Props) => {
+
+  const handleModal = (): void => {
+    setModalToggled(false)
+  }
 
   return (
     <nav>
@@ -52,13 +58,13 @@ const Nav = () => {
         <div className="navModal">
           <ul className="modalList">
             <li>
-              <Link to="/stories">Stories</Link>
+              <Link to="/stories" onClick={handleModal}>Stories</Link>
             </li>
             <li>
-              <Link to="/features">Features</Link>
+              <Link to="/features" onClick={handleModal}>Features</Link>
             </li>
             <li>
-              <Link to="/pricing">Pricing</Link>
+              <Link to="/pricing" onClick={handleModal}>Pricing</Link>
             </li>
           </ul>
 

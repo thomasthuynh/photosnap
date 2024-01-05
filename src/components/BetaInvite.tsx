@@ -1,14 +1,12 @@
+import "../scss/_betaInvite.scss";
+
 import InviteBgLg from "../assets/shared/desktop/bg-beta.jpg";
 import InviteBgMd from "../assets/shared/tablet/bg-beta.jpg";
 import InviteBgSm from "../assets/shared/mobile/bg-beta.jpg";
 
 import Arrow from "../assets/shared/desktop/arrow.svg";
 
-import "../scss/_betaInvite.scss";
-
-type Props = {};
-
-const BetaInvite = (props: Props) => {
+const BetaInvite = () => {
   return (
     <div className="betaInvite">
       <div className="betaImgContainer">

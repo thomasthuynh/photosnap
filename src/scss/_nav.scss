@@ -1,10 +1,13 @@
 nav {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  max-width: 1920px;
+  z-index: 20;
 }
 
 .menuContainer {
   position: relative;
-  z-index: 20;
+  z-index: 10;
   padding: 2.4rem 0;
   background-color: #fff;
 }
@@ -93,7 +96,6 @@ nav {
 
 .modalContainer {
   position: absolute;
-  z-index: 10;
   top: calc(-100% - 19.5rem);
   left: 50%;
   transform: translateX(-50%);
@@ -104,7 +106,7 @@ nav {
   transition: all 500ms ease;
 
   &.active {
-    top: 7.2rem;
+    top: 6.4rem;
     opacity: 1;
   }
 }

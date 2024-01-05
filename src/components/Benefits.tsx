@@ -5,9 +5,7 @@ import Responsive from "../assets/features/desktop/responsive.svg";
 import NoLimit from "../assets/features/desktop/no-limit.svg";
 import Embed from "../assets/features/desktop/embed.svg";
 
-type Props = {};
-
-const Benefits = (props: Props) => {
+const Benefits = () => {
   return (
     <div id="benefits" className="wrapper">
       <Feature

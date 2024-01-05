@@ -13,7 +13,7 @@ type Props = {
 const Story = ({ imgLg, imgSm, title, author, date }: Props) => {
   return (
     <div className="story">
-      <div className="overlay"></div>
+      <div className="storyOverlay"></div>
       <div className="storyImgContainer">
         <picture>
           <source media="(min-width: 640px)" srcSet={imgLg} />

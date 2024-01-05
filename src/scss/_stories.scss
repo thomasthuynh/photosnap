@@ -1,3 +1,7 @@
+  #stories {
+    padding-top: 6.4rem;
+  }
+  
   header {
     position: relative;
   }
@@ -6,7 +10,7 @@
   display: grid;
   position: relative;
 
-  .overlay {
+  .storiesHeaderOverlay {
     position: absolute;
     top: 0;
     left: 0;

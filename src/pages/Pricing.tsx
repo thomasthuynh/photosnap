@@ -7,11 +7,7 @@ import PricingHeroLg from "../assets/pricing/desktop/hero.jpg";
 import PricingHeroMd from "../assets/pricing/tablet/hero.jpg";
 import PricingHeroSm from "../assets/pricing/mobile/hero.jpg";
 
-import Check from "../assets/pricing/desktop/check.svg";
-
-type Props = {};
-
-const Pricing = (props: Props) => {
+const Pricing = () => {
   const [annualPlan, setAnnualPlan] = useState<boolean>(false);
 
   return (

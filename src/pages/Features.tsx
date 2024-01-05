@@ -13,9 +13,7 @@ import CustomDomain from "../assets/features/desktop/custom-domain.svg";
 import BoostExposure from "../assets/features/desktop/boost-exposure.svg";
 import DragDrop from "../assets/features/desktop/drag-drop.svg";
 
-type Props = {};
-
-const Features = (props: Props) => {
+const Features = () => {
   return (
     <div id="features">
       <header>
