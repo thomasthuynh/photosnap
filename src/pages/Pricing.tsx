@@ -1,5 +1,6 @@
 import { useState } from "react";
 import BetaInvite from "../components/BetaInvite";
+import PlanBenefit from "../ui/PlanBenefit";
 import "../scss/_pricing.scss";
 
 import PricingHeroLg from "../assets/pricing/desktop/hero.jpg";
@@ -45,7 +46,7 @@ const Pricing = (props: Props) => {
                 Monthly
               </p>
               <label className="switch">
-                <input type="checkbox" checked={annualPlan} readOnly/>
+                <input type="checkbox" checked={annualPlan} readOnly />
                 <span
                   className="slider"
                   onClick={() => setAnnualPlan(!annualPlan)}
@@ -97,7 +98,8 @@ const Pricing = (props: Props) => {
                 <div className="planText">
                   <h2>Business</h2>
                   <p>
-                    Additional features available such as more detailed metrics. Recommended for business owners.
+                    Additional features available such as more detailed metrics.
+                    Recommended for business owners.
                   </p>
                 </div>
 
@@ -112,6 +114,65 @@ const Pricing = (props: Props) => {
           </div>
         </div>
       </main>
+
+      <section className="comparePlans">
+        <div className="wrapper">
+          <h2>Compare</h2>
+          <div className="comparePlansFeaturesContainer">
+            <h3>The Features</h3>
+            <div className="tierLevelTitleContainer">
+              <span className="tierLevelTitle">Basic</span>
+              <span className="tierLevelTitle">Pro</span>
+              <span className="tierLevelTitle">Business</span>
+            </div>
+          </div>
+
+          <div className="planBenefitsContainer">
+            <PlanBenefit
+              title="Unlimited Story Posting"
+              basic={true}
+              pro={true}
+              business={true}
+            />
+            <PlanBenefit
+              title="Unlimited Photo Upload"
+              basic={true}
+              pro={true}
+              business={true}
+            />
+            <PlanBenefit
+              title="Embedding Custom Content"
+              basic={false}
+              pro={true}
+              business={true}
+            />
+            <PlanBenefit
+              title="Customize Metadata"
+              basic={false}
+              pro={true}
+              business={true}
+            />
+            <PlanBenefit
+              title="Advanced Metrics"
+              basic={false}
+              pro={false}
+              business={true}
+            />
+            <PlanBenefit
+              title="Search Engine Indexing"
+              basic={false}
+              pro={false}
+              business={true}
+            />
+            <PlanBenefit
+              title="Custom Analytics"
+              basic={false}
+              pro={false}
+              business={true}
+            />
+          </div>
+        </div>
+      </section>
 
       <BetaInvite />
     </div>

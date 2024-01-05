@@ -190,6 +190,41 @@ input:checked + .slider:before {
   background-color: #fff;
 }
 
+.comparePlans {
+  padding-bottom: 12.8rem;
+
+  h2 {
+    font-size: 4rem;
+    padding-bottom: 7.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    display: none;
+  }
+}
+
+.comparePlansFeaturesContainer {
+  padding-bottom: 1.6rem;
+  border-bottom: 0.2rem solid #000;
+
+  h3 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.tierLevelTitleContainer {
+  .tierLevelTitle {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   #pricing {
     header {
@@ -260,6 +295,31 @@ input:checked + .slider:before {
       left: 0;
       height: 100%;
       width: 0.6rem;
+    }
+  }
+
+  .comparePlans {
+    padding-top: 6.4rem;
+    h2 {
+      display: block;
+    }
+  }
+
+  .comparePlansFeaturesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tierLevelTitleContainer {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: end;
+
+    .tierLevelTitle {
+      width: 50%;
+      text-align: center;
+      display: block;
     }
   }
 }
