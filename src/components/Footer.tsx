@@ -18,7 +18,9 @@ const Footer = () => {
           {/* LOGO, ICONS, AND LINKS */}
           <div className="footerPrimary">
             <div className="footerLogoContainer">
+            <Link to="/">
               <img src={FooterLogo} alt="Logo" />
+            </Link>
             </div>
 
             <div className="socialIcons">
